@@ -10,13 +10,13 @@ import java.awt.event.ActionListener;
  *
  * @author Yendry León C24251
  */
-public class Login extends javax.swing.JFrame 
+public class VentanaLogin extends javax.swing.JFrame 
 {
 
     /**
      * Creates new form Login
      */
-    public Login() 
+    public VentanaLogin() 
     {
         initComponents();
     }

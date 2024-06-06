@@ -5,7 +5,7 @@
 package ucr.ac.cr.sosaa;
 
 import javax.swing.JFrame;
-import view.Login;
+import view.VentanaLogin;
 
 /**
  *
@@ -16,8 +16,8 @@ public class SOSAA
 
     public static void main(String[] args) 
     {
-        // Crear una instancia de la clase Login y hacerla visible
-        Login loginWindow = new Login();
+        // Crear una instancia de la clase VentanaLogin y hacerla visible
+        VentanaLogin loginWindow = new VentanaLogin();
         loginWindow.setVisible(true);
         loginWindow.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
