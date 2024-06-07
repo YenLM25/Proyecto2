@@ -8,12 +8,12 @@ package view;
  *
  * @author Usuario
  */
-public class AdmCarreras extends javax.swing.JFrame {
+public class AdmPlanEstudio extends javax.swing.JFrame {
 
     /**
-     * Creates new form Carreras
+     * Creates new form AdmPlanEstudio
      */
-    public AdmCarreras() {
+    public AdmPlanEstudio() {
         initComponents();
     }
 
@@ -26,46 +26,23 @@ public class AdmCarreras extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
         panelBotones1 = new view.PanelBotones();
-        panelDataCarreras1 = new view.PanelDataCarreras();
+        panelDataPlanesEstudio1 = new view.PanelDataPlanesEstudio();
         jlFondo = new javax.swing.JLabel();
-        jMenuBar1 = new javax.swing.JMenuBar();
-        jmOpcionesCa = new javax.swing.JMenu();
-        miSalir = new javax.swing.JMenuItem();
-        jmVerCa = new javax.swing.JMenu();
-        miRegistroCarreras = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMaximumSize(new java.awt.Dimension(600, 600));
+        setMinimumSize(new java.awt.Dimension(600, 600));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel1.setText("Administracion y Mantenimiento de Carreras");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 40, -1, -1));
-        getContentPane().add(panelBotones1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 480, -1, -1));
-        getContentPane().add(panelDataCarreras1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        getContentPane().add(panelBotones1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 500, -1, -1));
+        getContentPane().add(panelDataPlanesEstudio1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         jlFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/fondo.jpg"))); // NOI18N
-        jlFondo.setText("jLabel2");
+        jlFondo.setText("jLabel1");
         jlFondo.setMaximumSize(new java.awt.Dimension(600, 600));
         jlFondo.setMinimumSize(new java.awt.Dimension(600, 600));
         jlFondo.setPreferredSize(new java.awt.Dimension(600, 600));
         getContentPane().add(jlFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
-
-        jmOpcionesCa.setText("Opciones");
-
-        miSalir.setText("Salir");
-        jmOpcionesCa.add(miSalir);
-
-        jMenuBar1.add(jmOpcionesCa);
-
-        jmVerCa.setText("Ver");
-
-        miRegistroCarreras.setText("Ver Registro de Cursos");
-        jmVerCa.add(miRegistroCarreras);
-
-        jMenuBar1.add(jmVerCa);
-
-        setJMenuBar(jMenuBar1);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -87,34 +64,27 @@ public class AdmCarreras extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(AdmCarreras.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(AdmPlanEstudio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(AdmCarreras.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(AdmPlanEstudio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(AdmCarreras.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(AdmPlanEstudio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(AdmCarreras.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(AdmPlanEstudio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new AdmCarreras().setVisible(true);
+                new AdmPlanEstudio().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JLabel jlFondo;
-    private javax.swing.JMenu jmOpcionesCa;
-    private javax.swing.JMenu jmVerCa;
-    private javax.swing.JMenuItem miRegistroCarreras;
-    private javax.swing.JMenuItem miSalir;
     private view.PanelBotones panelBotones1;
-    private view.PanelDataCarreras panelDataCarreras1;
+    private view.PanelDataPlanesEstudio panelDataPlanesEstudio1;
     // End of variables declaration//GEN-END:variables
 }

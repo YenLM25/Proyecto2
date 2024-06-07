@@ -31,6 +31,10 @@ public class PanelBotones extends javax.swing.JPanel {
         btnEliminar = new javax.swing.JButton();
         btnAtras = new javax.swing.JButton();
 
+        setBackground(null);
+        setMaximumSize(new java.awt.Dimension(600, 100));
+        setOpaque(false);
+
         btnGuardar.setText("Guardar");
 
         btnEditar.setText("Editar");

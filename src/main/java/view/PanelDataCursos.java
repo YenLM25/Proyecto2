@@ -15,6 +15,7 @@ public class PanelDataCursos extends javax.swing.JPanel {
      */
     public PanelDataCursos() {
         initComponents();
+        
     }
 
     /**
@@ -38,14 +39,15 @@ public class PanelDataCursos extends javax.swing.JPanel {
         txtNombreCurso = new javax.swing.JTextField();
         txtSiglas = new javax.swing.JTextField();
         txtCreditos = new javax.swing.JTextField();
-        jScrollPane1 = new javax.swing.JScrollPane();
+        jsDescripcionCurso = new javax.swing.JScrollPane();
         txaDescripcionCurso = new javax.swing.JTextArea();
         txtIdCurso = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
+        btnBuscar = new javax.swing.JButton();
 
         setToolTipText("");
         setMaximumSize(new java.awt.Dimension(600, 600));
         setMinimumSize(new java.awt.Dimension(600, 600));
+        setOpaque(false);
         setPreferredSize(new java.awt.Dimension(600, 600));
 
         jlNombreCurso.setText("Nombre de Curso:");
@@ -68,9 +70,9 @@ public class PanelDataCursos extends javax.swing.JPanel {
 
         txaDescripcionCurso.setColumns(20);
         txaDescripcionCurso.setRows(5);
-        jScrollPane1.setViewportView(txaDescripcionCurso);
+        jsDescripcionCurso.setViewportView(txaDescripcionCurso);
 
-        jButton1.setText("Buscar");
+        btnBuscar.setText("Buscar");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -82,14 +84,14 @@ public class PanelDataCursos extends javax.swing.JPanel {
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jlCreditos)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtCreditos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(417, 424, Short.MAX_VALUE))
+                        .addComponent(txtCreditos, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jlDescripcion)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jScrollPane1))
+                                .addComponent(jsDescripcionCurso))
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addGroup(layout.createSequentialGroup()
@@ -97,7 +99,7 @@ public class PanelDataCursos extends javax.swing.JPanel {
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(txtIdCurso, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jButton1)
+                                        .addComponent(btnBuscar)
                                         .addGap(45, 45, 45)
                                         .addComponent(jlSiglas)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -106,7 +108,7 @@ public class PanelDataCursos extends javax.swing.JPanel {
                                         .addComponent(jlBloque)
                                         .addGap(18, 18, 18)
                                         .addComponent(cbBloque, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 33, Short.MAX_VALUE)
                                         .addComponent(jlModalidad)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(cbModalidad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -125,13 +127,14 @@ public class PanelDataCursos extends javax.swing.JPanel {
                     .addComponent(jlNombreCurso)
                     .addComponent(txtNombreCurso, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(48, 48, 48)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jlSiglas)
-                    .addComponent(txtSiglas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jlIdCurso)
                         .addComponent(txtIdCurso, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jButton1)))
+                        .addComponent(btnBuscar))
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jlSiglas)
+                        .addComponent(txtSiglas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(41, 41, 41)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jlBloque)
@@ -145,17 +148,16 @@ public class PanelDataCursos extends javax.swing.JPanel {
                 .addGap(55, 55, 55)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jlDescripcion)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jsDescripcionCurso, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(142, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnBuscar;
     private javax.swing.JComboBox<String> cbBloque;
     private javax.swing.JComboBox<String> cbModalidad;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel jlBloque;
     private javax.swing.JLabel jlCreditos;
     private javax.swing.JLabel jlDescripcion;
@@ -163,6 +165,7 @@ public class PanelDataCursos extends javax.swing.JPanel {
     private javax.swing.JLabel jlModalidad;
     private javax.swing.JLabel jlNombreCurso;
     private javax.swing.JLabel jlSiglas;
+    private javax.swing.JScrollPane jsDescripcionCurso;
     private javax.swing.JTextArea txaDescripcionCurso;
     private javax.swing.JTextField txtCreditos;
     private javax.swing.JTextField txtIdCurso;

@@ -28,19 +28,21 @@ public class PanelDataCarreras extends javax.swing.JPanel {
 
         txtNombreCurso = new javax.swing.JTextField();
         txtSiglas = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
+        btnBuscar = new javax.swing.JButton();
         jlNombreCarrera = new javax.swing.JLabel();
         jlIdCarrera = new javax.swing.JLabel();
         jlSiglasCarrera = new javax.swing.JLabel();
-        jScrollPane1 = new javax.swing.JScrollPane();
+        jsDescripcionCarrera = new javax.swing.JScrollPane();
         txaDescripcionCarrera = new javax.swing.JTextArea();
         txtIdCurso = new javax.swing.JTextField();
         jlDescripcion = new javax.swing.JLabel();
         jlPerfil = new javax.swing.JLabel();
-        jScrollPane2 = new javax.swing.JScrollPane();
+        jsPerfil = new javax.swing.JScrollPane();
         txaPerfil = new javax.swing.JTextArea();
 
-        jButton1.setText("Buscar");
+        setOpaque(false);
+
+        btnBuscar.setText("Buscar");
 
         jlNombreCarrera.setText("Nombre de la Carrera:");
 
@@ -50,7 +52,7 @@ public class PanelDataCarreras extends javax.swing.JPanel {
 
         txaDescripcionCarrera.setColumns(20);
         txaDescripcionCarrera.setRows(5);
-        jScrollPane1.setViewportView(txaDescripcionCarrera);
+        jsDescripcionCarrera.setViewportView(txaDescripcionCarrera);
 
         jlDescripcion.setText("Descripción del Carrera:");
 
@@ -58,7 +60,7 @@ public class PanelDataCarreras extends javax.swing.JPanel {
 
         txaPerfil.setColumns(20);
         txaPerfil.setRows(5);
-        jScrollPane2.setViewportView(txaPerfil);
+        jsPerfil.setViewportView(txaPerfil);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -70,11 +72,11 @@ public class PanelDataCarreras extends javax.swing.JPanel {
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jlPerfil)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jScrollPane2))
+                        .addComponent(jsPerfil))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addComponent(jlDescripcion)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jScrollPane1))
+                        .addComponent(jsDescripcionCarrera))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(layout.createSequentialGroup()
@@ -82,7 +84,7 @@ public class PanelDataCarreras extends javax.swing.JPanel {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(txtIdCurso, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton1)
+                                .addComponent(btnBuscar)
                                 .addGap(45, 45, 45)
                                 .addComponent(jlSiglasCarrera)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -107,29 +109,29 @@ public class PanelDataCarreras extends javax.swing.JPanel {
                     .addComponent(txtSiglas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jlIdCarrera)
                     .addComponent(txtIdCurso, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton1))
+                    .addComponent(btnBuscar))
                 .addGap(49, 49, 49)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jlDescripcion)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jsDescripcionCarrera, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(44, 44, 44)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jlPerfil)
-                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jsPerfil, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(141, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JButton btnBuscar;
     private javax.swing.JLabel jlDescripcion;
     private javax.swing.JLabel jlIdCarrera;
     private javax.swing.JLabel jlNombreCarrera;
     private javax.swing.JLabel jlPerfil;
     private javax.swing.JLabel jlSiglasCarrera;
+    private javax.swing.JScrollPane jsDescripcionCarrera;
+    private javax.swing.JScrollPane jsPerfil;
     private javax.swing.JTextArea txaDescripcionCarrera;
     private javax.swing.JTextArea txaPerfil;
     private javax.swing.JTextField txtIdCurso;

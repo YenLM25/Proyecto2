@@ -30,6 +30,7 @@ public class AdmCursos extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         panelBotones1 = new view.PanelBotones();
         panelDataCursos1 = new view.PanelDataCursos();
+        jlfondo = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jmOpciones = new javax.swing.JMenu();
         miSalir = new javax.swing.JMenuItem();
@@ -43,8 +44,17 @@ public class AdmCursos extends javax.swing.JFrame {
 
         jLabel1.setText("Administracion y Mantenimiento de Cursos");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 30, -1, -1));
+
+        panelBotones1.setBackground(new java.awt.Color(0, 0, 0, 150));
         getContentPane().add(panelBotones1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 480, -1, -1));
         getContentPane().add(panelDataCursos1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+
+        jlfondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/fondo.jpg"))); // NOI18N
+        jlfondo.setText("jLabel2");
+        jlfondo.setMaximumSize(new java.awt.Dimension(600, 600));
+        jlfondo.setMinimumSize(new java.awt.Dimension(600, 600));
+        jlfondo.setPreferredSize(new java.awt.Dimension(600, 600));
+        getContentPane().add(jlfondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         jmOpciones.setText("Opciones");
 
@@ -107,6 +117,7 @@ public class AdmCursos extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JLabel jlfondo;
     private javax.swing.JMenu jmOpciones;
     private javax.swing.JMenu jmVer;
     private javax.swing.JMenuItem miRegistroCurso;
