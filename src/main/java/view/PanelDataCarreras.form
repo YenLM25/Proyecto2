@@ -43,7 +43,7 @@
                               <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
                               <Component id="jlSiglasCarrera" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="txtSiglas" pref="131" max="32767" attributes="0"/>
+                              <Component id="txtSiglas" pref="92" max="32767" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="1" attributes="0">
                               <Component id="jlNombreCarrera" min="-2" max="-2" attributes="0"/>
@@ -101,16 +101,34 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jlNombreCarrera">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Lucida Sans Typewriter" size="12" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Nombre de la Carrera:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jlIdCarrera">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Lucida Sans Typewriter" size="12" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Id Carrera:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jlSiglasCarrera">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Lucida Sans Typewriter" size="12" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Siglas:"/>
       </Properties>
     </Component>
@@ -133,11 +151,23 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jlDescripcion">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Lucida Sans Typewriter" size="12" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Descripci&#xf3;n del Carrera:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jlPerfil">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Lucida Sans Typewriter" size="12" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Perfil Profesional:"/>
       </Properties>
     </Component>

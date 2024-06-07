@@ -4,18 +4,30 @@
  */
 package view;
 
+import java.awt.event.ActionListener;
+
 /**
  *
- * @author Usuario
+ * @author Yendry León Matarrita C24251
  */
 public class PanelBotones extends javax.swing.JPanel {
 
     /**
      * Creates new form PanelBotones
      */
-    public PanelBotones() {
+    public PanelBotones() 
+    {
         initComponents();
     }
+    
+    public void listen(ActionListener controller)
+    {
+        this.btnGuardar.addActionListener (controller);
+        this.btnEditar.addActionListener(controller);
+        this.btnEliminar.addActionListener(controller);
+        this.btnAtras.addActionListener(controller);
+    }
+        
 
     /**
      * This method is called from within the constructor to initialize the form.

@@ -4,9 +4,11 @@
  */
 package view;
 
+import java.awt.event.ActionListener;
+
 /**
  *
- * @author Usuario
+ * @author Maria Alejandra León Matarrita C24250
  */
 public class PanelDataPlanesEstudio extends javax.swing.JPanel {
 
@@ -15,6 +17,11 @@ public class PanelDataPlanesEstudio extends javax.swing.JPanel {
      */
     public PanelDataPlanesEstudio() {
         initComponents();
+    }
+    
+    public void listen(ActionListener controller)
+    {
+        this.btnBuscar.addActionListener (controller);
     }
 
     /**
@@ -48,24 +55,38 @@ public class PanelDataPlanesEstudio extends javax.swing.JPanel {
         setOpaque(false);
         setPreferredSize(new java.awt.Dimension(600, 600));
 
+        jlIdPlanEstudio.setFont(new java.awt.Font("Lucida Sans Typewriter", 1, 12)); // NOI18N
+        jlIdPlanEstudio.setForeground(new java.awt.Color(255, 255, 255));
         jlIdPlanEstudio.setText("Id Plan de Estudio:");
 
+        jlSede.setFont(new java.awt.Font("Lucida Sans Typewriter", 1, 12)); // NOI18N
+        jlSede.setForeground(new java.awt.Color(255, 255, 255));
         jlSede.setText("Sede:");
 
         txaDescripcionPlan.setColumns(20);
         txaDescripcionPlan.setRows(5);
         jsDescripcionPlan.setViewportView(txaDescripcionPlan);
 
+        jlFechaAprobacion.setFont(new java.awt.Font("Lucida Sans Typewriter", 1, 12)); // NOI18N
+        jlFechaAprobacion.setForeground(new java.awt.Color(255, 255, 255));
         jlFechaAprobacion.setText("Nombre de la Carrera:");
 
+        jlBloque.setFont(new java.awt.Font("Lucida Sans Typewriter", 1, 12)); // NOI18N
+        jlBloque.setForeground(new java.awt.Color(255, 255, 255));
         jlBloque.setText("Cantidad de Bloques:");
 
+        jlGrado.setFont(new java.awt.Font("Lucida Sans Typewriter", 1, 12)); // NOI18N
+        jlGrado.setForeground(new java.awt.Color(255, 255, 255));
         jlGrado.setText("Grado:");
 
         btnBuscar.setText("Buscar");
 
+        jlTotalCreditos.setFont(new java.awt.Font("Lucida Sans Typewriter", 1, 12)); // NOI18N
+        jlTotalCreditos.setForeground(new java.awt.Color(255, 255, 255));
         jlTotalCreditos.setText("Total de Creditos:");
 
+        jlDescripcionPlan.setFont(new java.awt.Font("Lucida Sans Typewriter", 1, 12)); // NOI18N
+        jlDescripcionPlan.setForeground(new java.awt.Color(255, 255, 255));
         jlDescripcionPlan.setText("Descripción del Plan:");
 
         cbGrado.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Elige una opcion", "Diplomado", "Bachillerato", "Licenciatura", "Maestria", "Curso Libre - Tecnico" }));
@@ -96,7 +117,7 @@ public class PanelDataPlanesEstudio extends javax.swing.JPanel {
                                         .addComponent(jlBloque)
                                         .addGap(18, 18, 18)
                                         .addComponent(cbCantidadBloque, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 13, Short.MAX_VALUE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                         .addComponent(jlGrado)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(cbGrado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))

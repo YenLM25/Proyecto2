@@ -8,7 +8,7 @@ import java.awt.event.ActionListener;
 
 /**
  *
- * @author Yendry León C24251
+ * @author Yendry León Matarrita C24251
  */
 public class VentanaLogin extends javax.swing.JFrame 
 {
@@ -24,6 +24,16 @@ public class VentanaLogin extends javax.swing.JFrame
      public void listen(ActionListener controller)
     {
         this.btnIngresar.addActionListener (controller);
+   
+        this.jmOpciones.addActionListener(controller);
+        this.jmModulos.addActionListener(controller);
+        this.miUsuarios.addActionListener(controller);
+        this.miCarrera.addActionListener(controller);
+        this.miCursos.addActionListener(controller);
+        this.miPlan.addActionListener(controller);
+        this.miSalir.addActionListener(controller);
+    
+        
     }
      
     public String getTextNombreUsuario()
@@ -55,8 +65,13 @@ public class VentanaLogin extends javax.swing.JFrame
         btnIngresar = new javax.swing.JButton();
         jlFondo = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
-        jMenu1 = new javax.swing.JMenu();
-        jMenu2 = new javax.swing.JMenu();
+        jmOpciones = new javax.swing.JMenu();
+        miSalir = new javax.swing.JMenuItem();
+        jmModulos = new javax.swing.JMenu();
+        miUsuarios = new javax.swing.JMenuItem();
+        miCarrera = new javax.swing.JMenuItem();
+        miCursos = new javax.swing.JMenuItem();
+        miPlan = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Sistema de Orgsnización y Seguimiento de Actividades - SOSAA");
@@ -64,6 +79,7 @@ public class VentanaLogin extends javax.swing.JFrame
         setMinimumSize(new java.awt.Dimension(600, 600));
         setName("Login"); // NOI18N
         setPreferredSize(new java.awt.Dimension(600, 600));
+        setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jlIngresar.setFont(new java.awt.Font("Lucida Sans Typewriter", 1, 24)); // NOI18N
@@ -72,27 +88,32 @@ public class VentanaLogin extends javax.swing.JFrame
         getContentPane().add(jlIngresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 150, 120, 30));
 
         jlNombreUsuario.setFont(new java.awt.Font("Lucida Sans Typewriter", 3, 14)); // NOI18N
+        jlNombreUsuario.setForeground(new java.awt.Color(255, 255, 255));
         jlNombreUsuario.setText("Nombre de Usuario:");
         getContentPane().add(jlNombreUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 210, -1, 30));
 
         jlContraseña.setFont(new java.awt.Font("Lucida Sans Typewriter", 3, 14)); // NOI18N
+        jlContraseña.setForeground(new java.awt.Color(255, 255, 255));
         jlContraseña.setText("Contraseña:");
         getContentPane().add(jlContraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 260, -1, 30));
 
         txtContraseña.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txtContraseña.setText("......");
         txtContraseña.setToolTipText("Ingrese su contraseña");
-        txtContraseña.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(204, 204, 255), null));
+        txtContraseña.setBorder(null);
         txtContraseña.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         getContentPane().add(txtContraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 260, 220, 30));
 
         txtNombreUsuario.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txtNombreUsuario.setToolTipText("Ingrese su Nombre de Usuario");
-        txtNombreUsuario.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(204, 204, 255), null));
+        txtNombreUsuario.setBorder(null);
         getContentPane().add(txtNombreUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 210, 220, 30));
 
         jrbRecordarUsuario.setFont(new java.awt.Font("Lucida Sans Typewriter", 3, 14)); // NOI18N
+        jrbRecordarUsuario.setForeground(new java.awt.Color(255, 255, 255));
         jrbRecordarUsuario.setText("Recordar Nombre de Usuario");
+        jrbRecordarUsuario.setBorder(null);
+        jrbRecordarUsuario.setContentAreaFilled(false);
         getContentPane().add(jrbRecordarUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 310, -1, -1));
 
         jlIngresar1.setFont(new java.awt.Font("Lucida Sans Typewriter", 1, 25)); // NOI18N
@@ -110,17 +131,32 @@ public class VentanaLogin extends javax.swing.JFrame
         getContentPane().add(btnIngresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 360, 110, -1));
 
         jlFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/fondo.jpg"))); // NOI18N
-        jlFondo.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jlFondo.setMaximumSize(new java.awt.Dimension(1336, 768));
         getContentPane().add(jlFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(-130, -30, -1, -1));
 
         jMenuBar1.setInheritsPopupMenu(true);
 
-        jMenu1.setText("Opciones");
-        jMenuBar1.add(jMenu1);
+        jmOpciones.setText("Opciones");
 
-        jMenu2.setText("Edit");
-        jMenuBar1.add(jMenu2);
+        miSalir.setText("Salir");
+        jmOpciones.add(miSalir);
+
+        jMenuBar1.add(jmOpciones);
+
+        jmModulos.setText("Modulos");
+
+        miUsuarios.setText("Administracion y Mantenimiento de Usuarios");
+        jmModulos.add(miUsuarios);
+
+        miCarrera.setText("Administracion y Mantenimiento de Carreras");
+        jmModulos.add(miCarrera);
+
+        miCursos.setText("Administracion y Mantenimiento de Cursos");
+        jmModulos.add(miCursos);
+
+        miPlan.setText("Administracion y Mantenimiento de Planes de Estudio");
+        jmModulos.add(miPlan);
+
+        jMenuBar1.add(jmModulos);
 
         setJMenuBar(jMenuBar1);
 
@@ -132,15 +168,20 @@ public class VentanaLogin extends javax.swing.JFrame
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnIngresar;
-    private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JLabel jlContraseña;
     private javax.swing.JLabel jlFondo;
     private javax.swing.JLabel jlIngresar;
     private javax.swing.JLabel jlIngresar1;
     private javax.swing.JLabel jlNombreUsuario;
+    private javax.swing.JMenu jmModulos;
+    private javax.swing.JMenu jmOpciones;
     private javax.swing.JRadioButton jrbRecordarUsuario;
+    private javax.swing.JMenuItem miCarrera;
+    private javax.swing.JMenuItem miCursos;
+    private javax.swing.JMenuItem miPlan;
+    private javax.swing.JMenuItem miSalir;
+    private javax.swing.JMenuItem miUsuarios;
     private javax.swing.JPasswordField txtContraseña;
     private javax.swing.JTextField txtNombreUsuario;
     // End of variables declaration//GEN-END:variables

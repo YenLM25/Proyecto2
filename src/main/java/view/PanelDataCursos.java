@@ -4,9 +4,11 @@
  */
 package view;
 
+import java.awt.event.ActionListener;
+
 /**
  *
- * @author Usuario
+ * @author Yendry León Matarrita C24251
  */
 public class PanelDataCursos extends javax.swing.JPanel {
 
@@ -16,6 +18,11 @@ public class PanelDataCursos extends javax.swing.JPanel {
     public PanelDataCursos() {
         initComponents();
         
+    }
+    
+    public void listen(ActionListener controller)
+    {
+        this.btnBuscar.addActionListener (controller);
     }
 
     /**
@@ -50,18 +57,32 @@ public class PanelDataCursos extends javax.swing.JPanel {
         setOpaque(false);
         setPreferredSize(new java.awt.Dimension(600, 600));
 
+        jlNombreCurso.setFont(new java.awt.Font("Lucida Sans Typewriter", 1, 12)); // NOI18N
+        jlNombreCurso.setForeground(new java.awt.Color(255, 255, 255));
         jlNombreCurso.setText("Nombre de Curso:");
 
+        jlIdCurso.setFont(new java.awt.Font("Lucida Sans Typewriter", 1, 12)); // NOI18N
+        jlIdCurso.setForeground(new java.awt.Color(255, 255, 255));
         jlIdCurso.setText("Id Curso:");
 
+        jlSiglas.setFont(new java.awt.Font("Lucida Sans Typewriter", 1, 12)); // NOI18N
+        jlSiglas.setForeground(new java.awt.Color(255, 255, 255));
         jlSiglas.setText("Siglas:");
 
+        jlBloque.setFont(new java.awt.Font("Lucida Sans Typewriter", 1, 12)); // NOI18N
+        jlBloque.setForeground(new java.awt.Color(255, 255, 255));
         jlBloque.setText("Bloque:");
 
+        jlModalidad.setFont(new java.awt.Font("Lucida Sans Typewriter", 1, 12)); // NOI18N
+        jlModalidad.setForeground(new java.awt.Color(255, 255, 255));
         jlModalidad.setText("Modalidad del curso:");
 
+        jlCreditos.setFont(new java.awt.Font("Lucida Sans Typewriter", 1, 12)); // NOI18N
+        jlCreditos.setForeground(new java.awt.Color(255, 255, 255));
         jlCreditos.setText("Creditos:");
 
+        jlDescripcion.setFont(new java.awt.Font("Lucida Sans Typewriter", 1, 12)); // NOI18N
+        jlDescripcion.setForeground(new java.awt.Color(255, 255, 255));
         jlDescripcion.setText("Descripción del curso:");
 
         cbModalidad.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Elige una opcion", "Presencial", "Virtual", "Bimodal", " " }));
@@ -108,7 +129,7 @@ public class PanelDataCursos extends javax.swing.JPanel {
                                         .addComponent(jlBloque)
                                         .addGap(18, 18, 18)
                                         .addComponent(cbBloque, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 33, Short.MAX_VALUE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                         .addComponent(jlModalidad)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(cbModalidad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))

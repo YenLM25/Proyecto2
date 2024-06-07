@@ -4,9 +4,11 @@
  */
 package view;
 
+import java.awt.event.ActionListener;
+
 /**
  *
- * @author Usuario
+ * @author Maria Alejandra León Matarrita C24250
  */
 public class PanelDataUsuarios extends javax.swing.JPanel {
 
@@ -15,6 +17,11 @@ public class PanelDataUsuarios extends javax.swing.JPanel {
      */
     public PanelDataUsuarios() {
         initComponents();
+    }
+    
+    public void listen(ActionListener controller)
+    {
+        this.btnBuscar.addActionListener (controller);
     }
 
     /**
@@ -42,24 +49,47 @@ public class PanelDataUsuarios extends javax.swing.JPanel {
         jlContraseña = new javax.swing.JLabel();
         jpContraseña = new javax.swing.JPasswordField();
 
+        setBackground(new java.awt.Color(255, 255, 255));
+        setForeground(new java.awt.Color(255, 255, 255));
         setOpaque(false);
 
+        jlTipoUsuario.setBackground(new java.awt.Color(255, 255, 255));
+        jlTipoUsuario.setFont(new java.awt.Font("Lucida Sans Typewriter", 1, 12)); // NOI18N
+        jlTipoUsuario.setForeground(new java.awt.Color(255, 255, 255));
         jlTipoUsuario.setText("Tipo Usuario:");
 
+        jlCorreo.setBackground(new java.awt.Color(255, 255, 255));
+        jlCorreo.setFont(new java.awt.Font("Lucida Sans Typewriter", 1, 12)); // NOI18N
+        jlCorreo.setForeground(new java.awt.Color(255, 255, 255));
         jlCorreo.setText("Correo Electronico:");
 
         btnBuscar.setText("Buscar");
 
+        jlTelefono.setBackground(new java.awt.Color(255, 255, 255));
+        jlTelefono.setFont(new java.awt.Font("Lucida Sans Typewriter", 1, 12)); // NOI18N
+        jlTelefono.setForeground(new java.awt.Color(255, 255, 255));
         jlTelefono.setText("Telefono:");
 
         cbTipoUsuario.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Elige una opcion", "Administrador", "Docente", "Estudiante" }));
 
+        jlNombreUsuario.setBackground(new java.awt.Color(255, 255, 255));
+        jlNombreUsuario.setFont(new java.awt.Font("Lucida Sans Typewriter", 1, 12)); // NOI18N
+        jlNombreUsuario.setForeground(new java.awt.Color(255, 255, 255));
         jlNombreUsuario.setText("Nombre:");
 
+        jlApellido.setBackground(new java.awt.Color(255, 255, 255));
+        jlApellido.setFont(new java.awt.Font("Lucida Sans Typewriter", 1, 12)); // NOI18N
+        jlApellido.setForeground(new java.awt.Color(255, 255, 255));
         jlApellido.setText("Apellido:");
 
+        jlIdUsuario.setBackground(new java.awt.Color(255, 255, 255));
+        jlIdUsuario.setFont(new java.awt.Font("Lucida Sans Typewriter", 1, 12)); // NOI18N
+        jlIdUsuario.setForeground(new java.awt.Color(255, 255, 255));
         jlIdUsuario.setText("Id Usuario:");
 
+        jlContraseña.setBackground(new java.awt.Color(255, 255, 255));
+        jlContraseña.setFont(new java.awt.Font("Lucida Sans Typewriter", 1, 12)); // NOI18N
+        jlContraseña.setForeground(new java.awt.Color(255, 255, 255));
         jlContraseña.setText("Contraseña:");
 
         jpContraseña.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -98,7 +128,7 @@ public class PanelDataUsuarios extends javax.swing.JPanel {
                                 .addComponent(btnBuscar)
                                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(txtNombreUsuario, javax.swing.GroupLayout.DEFAULT_SIZE, 392, Short.MAX_VALUE)
+                                .addComponent(txtNombreUsuario, javax.swing.GroupLayout.DEFAULT_SIZE, 371, Short.MAX_VALUE)
                                 .addGap(93, 93, 93))))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

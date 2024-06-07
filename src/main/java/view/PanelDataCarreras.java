@@ -4,9 +4,11 @@
  */
 package view;
 
+import java.awt.event.ActionListener;
+
 /**
  *
- * @author Usuario
+ * @author Maria Alejandra León Matarrita C24250
  */
 public class PanelDataCarreras extends javax.swing.JPanel {
 
@@ -15,6 +17,11 @@ public class PanelDataCarreras extends javax.swing.JPanel {
      */
     public PanelDataCarreras() {
         initComponents();
+    }
+    
+    public void listen(ActionListener controller)
+    {
+        this.btnBuscar.addActionListener (controller);
     }
 
     /**
@@ -44,18 +51,28 @@ public class PanelDataCarreras extends javax.swing.JPanel {
 
         btnBuscar.setText("Buscar");
 
+        jlNombreCarrera.setFont(new java.awt.Font("Lucida Sans Typewriter", 1, 12)); // NOI18N
+        jlNombreCarrera.setForeground(new java.awt.Color(255, 255, 255));
         jlNombreCarrera.setText("Nombre de la Carrera:");
 
+        jlIdCarrera.setFont(new java.awt.Font("Lucida Sans Typewriter", 1, 12)); // NOI18N
+        jlIdCarrera.setForeground(new java.awt.Color(255, 255, 255));
         jlIdCarrera.setText("Id Carrera:");
 
+        jlSiglasCarrera.setFont(new java.awt.Font("Lucida Sans Typewriter", 1, 12)); // NOI18N
+        jlSiglasCarrera.setForeground(new java.awt.Color(255, 255, 255));
         jlSiglasCarrera.setText("Siglas:");
 
         txaDescripcionCarrera.setColumns(20);
         txaDescripcionCarrera.setRows(5);
         jsDescripcionCarrera.setViewportView(txaDescripcionCarrera);
 
+        jlDescripcion.setFont(new java.awt.Font("Lucida Sans Typewriter", 1, 12)); // NOI18N
+        jlDescripcion.setForeground(new java.awt.Color(255, 255, 255));
         jlDescripcion.setText("Descripción del Carrera:");
 
+        jlPerfil.setFont(new java.awt.Font("Lucida Sans Typewriter", 1, 12)); // NOI18N
+        jlPerfil.setForeground(new java.awt.Color(255, 255, 255));
         jlPerfil.setText("Perfil Profesional:");
 
         txaPerfil.setColumns(20);
@@ -88,7 +105,7 @@ public class PanelDataCarreras extends javax.swing.JPanel {
                                 .addGap(45, 45, 45)
                                 .addComponent(jlSiglasCarrera)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(txtSiglas, javax.swing.GroupLayout.DEFAULT_SIZE, 131, Short.MAX_VALUE))
+                                .addComponent(txtSiglas, javax.swing.GroupLayout.DEFAULT_SIZE, 92, Short.MAX_VALUE))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jlNombreCarrera)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
